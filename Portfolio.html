@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manikanta Swamy | AI Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<style>
+:root{
+  --bg:#0b0f19;
+  --text:#e2e8f0;
+  --muted:#94a3b8;
+  --accent:#6366f1;
+}
+
+.parallax {
+  transform: translateY(0px);
+  transition: transform 0.3s ease-out;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Inter',sans-serif;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  scroll-behavior:smooth;
+}
+
+#particles-js{
+  position:fixed;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+header{
+  padding:25px 10%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:fixed;
+  width:100%;
+  backdrop-filter:blur(12px);
+  background:rgba(11,15,25,0.6);
+  z-index:1000;
+}
+
+header h2{
+  font-weight:600;
+}
+
+nav a{
+  margin-left:25px;
+  text-decoration:none;
+  color:var(--muted);
+  font-weight:500;
+}
+
+nav a:hover{
+  color:var(--accent);
+}
+
+section{
+  padding:140px 10%;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.hero h1{
+  font-size:60px;
+  font-weight:700;
+}
+
+.hero span{
+  color:var(--accent);
+}
+
+.hero p{
+  margin-top:25px;
+  max-width:700px;
+  color:var(--muted);
+  line-height:1.7;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:35px;
+  padding:14px 28px;
+  background:var(--accent);
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:translateY(-4px);
+}
+
+.timeline{
+  border-left:2px solid var(--accent);
+  margin-top:40px;
+  padding-left:30px;
+}
+
+.timeline-item{
+  margin-bottom:40px;
+  position:relative;
+}
+
+.timeline-item::before{
+  content:"";
+  position:absolute;
+  left:-40px;
+  top:5px;
+  width:15px;
+  height:15px;
+  background:var(--accent);
+  border-radius:50%;
+}
+
+.card{
+  background:#111827;
+  padding:30px;
+  border-radius:12px;
+  margin-top:30px;
+}
+
+footer{
+  text-align:center;
+  padding:40px;
+  color:var(--muted);
+}
+
+@media(max-width:768px){
+  .hero h1{font-size:38px;}
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+  <h2>Manikanta Swamy</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Technical Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#experience">Experience</a>
+    <a href="#github">GitHub</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>
+    Hi, I'm Manikanta <br>
+    <span id="typed"></span>
+  </h1>
+
+  <p>
+    AI & Machine Learning Graduate specializing in backend systems,
+    scalable architecture, and real-time AI applications.
+    Passionate about solving complex problems with clean and efficient solutions.
+  </p>
+
+  <a href="#contact" class="btn">Let's Connect</a>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    I combine strong backend engineering skills with AI expertise.
+    Experienced in building REST APIs using Node.js, developing ML systems with Python,
+    and deploying real-time computer vision solutions.
+    I also bring leadership experience from managing high-performance teams in fast-paced environments.
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="card parallax">
+    <p>
+      <strong>Python:</strong> Strong foundation in backend logic, data structures, 
+      automation, and machine learning model development. Experienced in 
+      OpenCV-based computer vision systems and real-time data processing.
+      Capable of building scalable backend services and AI-powered applications.
+      <br><br>
+      <strong>JavaScript & Node.js:</strong> Skilled in building RESTful APIs, 
+      handling asynchronous operations, and designing efficient backend architectures.
+      Experienced in implementing authentication, database integration, and 
+      production-ready server logic.
+      <br><br>
+      <strong>Databases (MongoDB & SQL):</strong> Knowledge of database design, 
+      schema optimization, indexing, and query performance tuning.
+      Able to manage structured and unstructured data effectively.
+      <br><br>
+      <strong>Machine Learning & AI:</strong> Practical exposure to supervised learning,
+      model evaluation, feature extraction, and deployment of ML systems.
+      Built real-time driver drowsiness detection system using facial landmark tracking.
+    </p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card parallax">
+    <h3>Driver Drowsiness Detection System</h3>
+    <p>
+      Developed a real-time AI-powered driver monitoring system using Python and OpenCV.
+      Implemented facial landmark detection to track eye blinking patterns and fatigue signs.
+      Integrated alert mechanisms to notify drivers instantly when drowsiness is detected.
+      Optimized algorithm performance under varying lighting conditions to ensure reliability.
+      This project demonstrates expertise in computer vision, real-time processing,
+      and applied machine learning techniques.
+    </p>
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="card parallax">
+    <p>
+      <strong>B.Tech – Computer Science (AI & ML)</strong><br>
+      KIET, JNTU Kakinada (2025) – CGPA: 7.22 
+       
+      Specialized in Artificial Intelligence, Machine Learning,
+      Data Structures, Algorithms, and Backend Development.
+      <br><br>
+      Intermediate (MPC) – 80%  
+      <br><br>
+      SSC – 90%
+    </p>
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="card parallax">
+    <p>
+      ✔ Salesforce Certified 
+      <br><br>
+
+      ✔ Python – Infosys Springboard 
+      <br><br>
+      ✔ ML Foundation – IIIT Hyderabad
+        <br><br>
+      ✔ Python – EDYST  
+      <br><br>
+      ✔ 24-Hour Hackathon Participant – INEURON 
+
+      <br><br>
+      These certifications enhanced my practical understanding of AI,
+      backend systems, and enterprise-level software development.
+    </p>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience Timeline</h2>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <h3>Shift In-Charge – Zepto (2025)</h3>
+      <p>
+        Led operational workflows, optimized fulfillment rates,
+        reduced stock discrepancies, and improved customer satisfaction
+        through data-driven KPI monitoring.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Software Development Intern – Skill Vertex (2024)</h3>
+      <p>
+        Built scalable REST APIs, participated in Agile sprint cycles,
+        and improved backend efficiency through debugging and code optimization.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="github">
+  <h2>GitHub Stats</h2>
+  <div class="card">
+    🔗 <a href="https://github.com/Maniyedida1" target="_blank">GitHub Profile</a><br><br>
+    
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Maniyedida1&theme=tokyonight" width="100%">
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    📧 <a href="mailto:maniyedida1030@gmail.com">maniyedida1030@gmail.com</a><br><br>
+    🔗 <a href="https://www.linkedin.com/in/manikantaswamy-yedida" target="_blank">LinkedIn Profile</a><br><br>
+    📱 <a href="tel:+919100251888">+91 9100251888</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Manikanta Swamy | Production Level Portfolio 🚀
+</footer>
+
+<script>
+particlesJS("particles-js",{
+  particles:{
+    number:{value:70},
+    size:{value:3},
+    move:{speed:2},
+    line_linked:{enable:true},
+    color:{value:"#6366f1"}
+  }
+});
+
+new Typed("#typed",{
+  strings:[
+    "AI Engineer",
+    "Backend Developer",
+    "Full Stack Engineer",
+    "Problem Solver"
+  ],
+  typeSpeed:60,
+  backSpeed:40,
+  loop:true
+});
+</script>
+
+
+
+</body>
+</html>
